@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+:root {
+  --primaryPink: #ED6B86;
+  --backgroundColour: #463239;
+  --lightBackground: #4F383F;
+  --mainFont: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-content: space-between;
+  margin: auto;
+  border: 5px solid black;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--backgroundColour);
+  margin: 0;
+}
+
+.TOPBAR {
+  background: var(--primaryPink);
+  padding: 1em;
+}
+
+.TOPBAR .aboutmeDavidPark {
+  font-family: var(--mainFont);
+  text-decoration: none;
+  font-weight: Regular;
+  font-size: 25px;
+  color: white;
+}
+
+.TOPBAR .topBarNames {
+  display: none;
+}
+
+.home .homeProfilePic {
+  display: block;
+  height: 296px;
+  border-radius: 50%;
+  background-position: center center;
+}
+
+.home .homeName {
+  font-family: var(--mainFont);
+  color: white;
+  text-decoration: none;
+  font-size: 62px;
+  font-weight: none;
+}
+
+.home .subhead {
+  font-family: var(--mainFont);
+  font-size: 31px;
+  color: white;
+  font-weight: bold;
+}
+
+.home a {
+  font-family: var(--mainFont);
+  background: var(--primaryPink);
+  color: white;
+  text-decoration: none;
+  padding: .6em 1.3em;
+  font-size: 22px;
+  font-weight: bold;
+  border-radius: 5em;
+  display: inline-block;
+}
+/*# sourceMappingURL=main.css.map */
