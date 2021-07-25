@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
+body {
+    background: var(--backgroundColour);
+    margin: 0;
+    font-family: var(--mainFont);
+}
+
 :root {
     --primaryPink: #ED6B86;
     --backgroundColour: #463239;
@@ -10,82 +16,68 @@
 .container {
     display: flex;
     place-content: space-between;
-    margin: auto;
-  
-    border: 5px solid black;
-    
+    padding-right: 100px;
+    padding-left: 100px;
 }
 
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    background: var(--backgroundColour);
-    margin: 0;
-}
-
-.TOPBAR {
+.navbar {
 
     background: var(--primaryPink);
     padding: 1em;
 
-    .aboutmeDavidPark {
-        font-family: var(--mainFont);
-        text-decoration: none;
-        font-weight: Regular;
-        font-size: 25px;
-        color: white;
-    }
-
-    .topBarNames {
+    nav { /* TEMPORARY DISABLE*/
         display: none;
     }
+    .navbarName {
 
+        text-decoration: none;
+        font-weight: regular;
+        color: white;
+        font-size: 1.2em;
+    }
+
+    .mobile-menu {
+        cursor: pointer;
+    }
+}
+
+.hero {
+
+    text-align: center;
+
+
+    .avatar {
+
+        width: 175px;
+        height: 175px;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 50%;
+        
+    }
+
+    .aboutMeName {
+
+        color:white;
+        text-decoration: none;
+        font-weight: bold;
+        text-align: center;
+
+    }
+
+    .temporaryDisable {
+        display: none;
+    }
 }
 
 
-.home {
+.graphics {
 
-    .homeProfilePic {
-        
-        display: block;
-        height: 296px;
-        border-radius: 50%;
-        background-position: center center;      
-
+    .temporaryDisable {
+        display:none;
     }
+}
 
-  
-
-    .homeName {
-        font-family: var(--mainFont);
-        color:white;
-        text-decoration: none;
-        font-size: 62px;
-        font-weight: none;
-        
-    }
-
-    .subhead {
-        font-family: var(--mainFont);
-        font-size: 31px;
-        color: white;
-        font-weight: bold;
-
-    }
-
-    a {
-        font-family: var(--mainFont);
-        background: var(--primaryPink);
-        color:white;
-        text-decoration: none;
-        padding: .6em 1.3em;
-        font-size: 22px;
-        font-weight: bold;
-        border-radius: 5em;
-        display: inline-block
-    }
+ul {
+    list-style: none;
 }
