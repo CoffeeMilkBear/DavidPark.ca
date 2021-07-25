@@ -13,63 +13,85 @@ body {
     --mainFont: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.container {
-    display: flex;
-    place-content: space-between;
-    padding-right: 100px;
-    padding-left: 100px;
+section {
+    padding: 4em 2em 1em 2em;
 }
 
+/* START HERE*/
+
+/* nav bar*/
 .navbar {
 
+    .container {
+        display: flex;
+        place-content: space-between;
+    }
+
     background: var(--primaryPink);
-    padding: 1em;
+    padding: 1em 1em 1em 1em;
 
     nav { /* TEMPORARY DISABLE*/
         display: none;
     }
-    .navbarName {
 
+    .navbarName {
         text-decoration: none;
         font-weight: regular;
         color: white;
         font-size: 1.2em;
+        padding: 0em 0em 0em 0.5em;
     }
 
     .mobile-menu {
         cursor: pointer;
     }
+
 }
 
 .hero {
-
-    text-align: center;
-
-
+    
     .avatar {
-
-        width: 175px;
-        height: 175px;
+        border: 5px solid var(--primaryPink);
+        display: block; 
+        width: 251px;
+        height: 251px;
         margin-left: auto;
         margin-right: auto;
-        border-radius: 50%;
-        
+        border-radius: 50%;      
     }
 
     .aboutMeName {
 
+        padding: 0em 2em 0.15em 2em;
+        margin: 0em 0em 0em 0em;
         color:white;
         text-decoration: none;
         font-weight: bold;
         text-align: center;
-
+        font-size: 38px;
+        
     }
 
     .temporaryDisable {
         display: none;
     }
-}
 
+    .description {
+        color:white;
+        text-decoration:none;
+        font-weight: bold;
+        text-align: center;
+        font-size: 1em;
+    }
+
+    .aboutMeDescription {
+        color:white;
+        text-decoration: none;
+        font-weight: none;
+        text-align: center;
+    }
+
+}
 
 .graphics {
 
@@ -80,4 +102,5 @@ body {
 
 ul {
     list-style: none;
+    text-align: center;
 }
