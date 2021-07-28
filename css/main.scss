@@ -22,18 +22,20 @@ section {
 /* nav bar*/
 .navbar {
 
+    background: var(--primaryPink);
+    padding: 1em 1em 1em 1em;
+
     .container {
         display: flex;
         place-content: space-between;
     }
 
-    background: var(--primaryPink);
-    padding: 1em 1em 1em 1em;
 
     nav { /* TEMPORARY DISABLE*/
         display: none;
     }
 
+    /* DAVID PARK text on navbar*/
     .navbarName {
         text-decoration: none;
         font-weight: regular;
@@ -42,6 +44,7 @@ section {
         padding: 0em 0em 0em 0.5em;
     }
 
+    /* menu button on navbar*/
     .mobile-menu {
         cursor: pointer;
     }
@@ -50,6 +53,8 @@ section {
 
 .hero {
     
+    text-align: center;
+
     .avatar {
         border: 5px solid var(--primaryPink);
         display: block; 
@@ -60,14 +65,13 @@ section {
         border-radius: 50%;      
     }
 
-    .aboutMeName {
+    #aboutMeName {
 
         padding: 0.25em 2em 0.15em 2em;
         margin: 0em 0em 0em 0em;
         color:white;
         text-decoration: none;
         font-weight: bold;
-        text-align: center;
         font-size: 38px;
         
     }
@@ -76,38 +80,90 @@ section {
         display: none;
     }
 
-    .description {
+    /* PROGRAMMING WARLORD text*/
+    #description {
         color:white;
         text-decoration:none;
-        font-weight: none;
-        text-align: center;
-        font-size: 12px;
+        font-weight: none !important;
+        font-size: 21px;
     }
 
+    /* buttons*/
+    .heroGithub {
+        margin-right: 1em;
+    }
+
+    .heroGithub, .heroTwitter {
+        
+        color: white;
+        text-decoration: none;
+        padding: .6em 1.3em;
+        background: var(--primaryPink);   
+        font-size: 16px;
+        font-weight: bold;
+        
+    }
+
+    /* entire paragraph*/
     .aboutMeDescription {
         color:white;
         text-decoration: none;
         font-weight: none;
-        text-align: center;
+        padding-top: 4.2em;
+        padding-bottom: 4.5em;
     }
 
-    .aboutMeOne {
-        color: var(--primaryPink);
+    #aboutMeOne, #aboutMeTwo, #aboutMeThree {
+        font-size: 25px;
     }
 
-    .descriptionResume {
+    #aboutMeOne {
         color: var(--primaryPink);
-        text-decoration:none;
+        font-weight: bold;
     }
+
+    #aboutMeTwo {
+        width: 740px;  
+        margin: 0 auto 0 auto;
+
+    }
+
+    #aboutMeThree { 
+
+        #descriptionResume {
+            color: var(--primaryPink);
+            text-decoration: none;
+        } 
+
+    }
+
+    ul {
+       
+        li {
+
+            background: blue;
+            text-align: center;
+         
+
+
+            img { 
+                width: 5em;
+                height: 5em;
+            }
+
+      
+
+           
+
+
+        }
+
+    }
+
 
 }
 
-.graphics {
 
-    .temporaryDisable {
-        display:none;
-    }
-}
 
 ul {
     list-style: none;
