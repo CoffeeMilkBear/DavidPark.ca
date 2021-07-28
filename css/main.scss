@@ -11,6 +11,7 @@ body {
     --backgroundColour: #463239;
     --lightBackground: #4F383F; 
     --mainFont: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --secondFont: 'Bebas Neue', cursive;
 }
 
 section {
@@ -24,7 +25,7 @@ section {
 
     background: var(--primaryPink);
     padding: 1em 1em 1em 1em;
-
+   
     .container {
         display: flex;
         place-content: space-between;
@@ -37,6 +38,7 @@ section {
 
     /* DAVID PARK text on navbar*/
     .navbarName {
+
         text-decoration: none;
         font-weight: regular;
         color: white;
@@ -141,20 +143,50 @@ section {
        
         li {
 
-            background: blue;
+            background: none;
             text-align: center;
-         
+            padding: 2em 1em;
+            width: 80%;
+            margin: 0 auto 5em auto;
+            border: 1px solid var(--primaryPink);
 
-
-            img { 
-                width: 5em;
-                height: 5em;
+            h5 {
+                font-size: 24px;
+                color: var(--primaryPink);
+                font-weight: bold;
+                margin-top: 0.3em;  
             }
 
-      
+            p {
+                color: white;
+                font-size: 17px;
+                padding-bottom: 1.2em;
 
-           
+            }
 
+            a {
+                
+                color:white;
+                text-decoration: none;
+                background: var(--primaryPink);
+                padding: 0.5em 3.7em;
+                
+            }
+
+            img { 
+                width: 133px;
+                height: 133px;
+                border-radius:50%;
+                margin-bottom: 0.5em;
+            }
+
+            h6 {
+                color: white;
+                text-decoration: none;
+                font-weight: none !important;
+                font-size: 17px;
+                margin-bottom: 0.5em;
+            }
 
         }
 
@@ -163,6 +195,24 @@ section {
 
 }
 
+.graphics {
+
+    text-align: center;
+    background: var(--primaryPink);
+
+    .graphicsTitle {
+        
+        font-family: var(--secondFont);
+        color: white;
+        font-size: 111px;
+        margin: 0 auto 5em auto;
+        
+        .fuck {
+            -webkit-text-stroke: white 1px;
+        }
+    }
+
+}
 
 
 ul {
