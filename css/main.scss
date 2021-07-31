@@ -53,6 +53,7 @@ section {
 
 }
 
+
 .hero {
     
     text-align: center;
@@ -60,8 +61,8 @@ section {
     .avatar {
         border: 5px solid var(--primaryPink);
         display: block; 
-        width: 251px;
-        height: 251px;
+        width: 200px;
+        height: 200px;
         margin-left: auto;
         margin-right: auto;
         border-radius: 50%;      
@@ -74,7 +75,7 @@ section {
         color:white;
         text-decoration: none;
         font-weight: bold;
-        font-size: 38px;
+        font-size: 30px;
         
     }
 
@@ -87,7 +88,7 @@ section {
         color:white;
         text-decoration:none;
         font-weight: none !important;
-        font-size: 21px;
+        font-size: 15px;
     }
 
     /* buttons*/
@@ -199,6 +200,7 @@ section {
 
     text-align: center;
     background: var(--primaryPink);
+    padding-bottom: 3.5em;
 
     .graphicsTitle {
         
@@ -206,7 +208,12 @@ section {
         color: white;
         font-size: 111px;
         margin: 0 auto 0em auto;
-  
+        
+        .fuck {
+            color: var(--primaryPink);
+            -webkit-text-stroke: 1px white;
+            
+        }
     }
 
     .left-col {
@@ -305,10 +312,22 @@ section {
 
 }
 
+.contactMe {
 
+    text-align: center;
 
+    .container { 
 
+        display: flex;
+        
+        .contactMeLeft {
 
+            color:white;
+
+        }
+
+    }
+}
 
 ul {
     list-style: none;

@@ -60,8 +60,8 @@ section {
 .hero .avatar {
   border: 5px solid var(--primaryPink);
   display: block;
-  width: 251px;
-  height: 251px;
+  width: 200px;
+  height: 200px;
   margin-left: auto;
   margin-right: auto;
   border-radius: 50%;
@@ -73,7 +73,7 @@ section {
   color: white;
   text-decoration: none;
   font-weight: bold;
-  font-size: 38px;
+  font-size: 30px;
 }
 
 .hero .temporaryDisable {
@@ -84,7 +84,7 @@ section {
   color: white;
   text-decoration: none;
   font-weight: none !important;
-  font-size: 21px;
+  font-size: 15px;
 }
 
 .hero .heroGithub {
@@ -174,6 +174,7 @@ section {
 .graphics {
   text-align: center;
   background: var(--primaryPink);
+  padding-bottom: 3.5em;
 }
 
 .graphics .graphicsTitle {
@@ -181,6 +182,11 @@ section {
   color: white;
   font-size: 111px;
   margin: 0 auto 0em auto;
+}
+
+.graphics .graphicsTitle .fuck {
+  color: var(--primaryPink);
+  -webkit-text-stroke: 1px white;
 }
 
 .graphics .left-col {
@@ -259,6 +265,20 @@ section {
   background: var(--primaryPink);
   border: white 1px solid;
   padding: 0.5em 4em;
+}
+
+.contactMe {
+  text-align: center;
+}
+
+.contactMe .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contactMe .container .contactMeLeft {
+  color: white;
 }
 
 ul {
