@@ -33,7 +33,32 @@ section {
 
 
     nav { /* TEMPORARY DISABLE*/
-        display: none;
+       position: fixed;
+       z-index: 999;
+       width: 66%;
+       right: 0;
+       top: 0;
+       background: var(--lightBackground);
+       height: 100vh;
+       padding: 1em;
+
+       
+
+       li {
+
+            a {
+                color: white;
+                text-decoration: none;
+                display: block;
+                padding: .5em;
+                font-size: 1.3em;
+                text-align: right;
+
+                &.hover {
+                    font-weight: bold;
+                }
+            }
+       }
     }
 
     /* DAVID PARK text on navbar*/
@@ -117,7 +142,7 @@ section {
     }
 
     #aboutMeOne, #aboutMeTwo, #aboutMeThree {
-        font-size: 25px;
+        font-size: 17px;
     }
 
     #aboutMeOne {
@@ -152,7 +177,7 @@ section {
             border: 1px solid var(--primaryPink);
 
             h5 {
-                font-size: 24px;
+                font-size: 20px;
                 color: var(--primaryPink);
                 font-weight: bold;
                 margin-top: 0.3em;  
@@ -160,7 +185,7 @@ section {
 
             p {
                 color: white;
-                font-size: 17px;
+                font-size: 15px;
                 padding-bottom: 1.2em;
 
             }
@@ -185,7 +210,7 @@ section {
                 color: white;
                 text-decoration: none;
                 font-weight: none !important;
-                font-size: 17px;
+                font-size: 15px;
                 margin-bottom: 0.5em;
             }
 
@@ -252,14 +277,14 @@ section {
         padding-bottom: 5em;
 
         #graphicsDescriptionOne {
-            font-size: 17px;
+            font-size: 15px;
             color:white;
             font-weight: bold;
             padding-bottom: 2.5em;
         }
 
         #graphicsDescriptionTwo {
-            font-size: 17px;
+            font-size: 15px;
             color:white;
             font-weight: none;
         }
@@ -314,20 +339,61 @@ section {
 
 .contactMe {
 
-    text-align: center;
 
-    .container { 
+    .contactMeLeft {
 
-        display: flex;
-        
-        .contactMeLeft {
+        color: white;
 
-            color:white;
-
+        a {
+            text-decoration: none;
+            color: var(--primaryPink);
         }
 
     }
+    .contactMeRight {
+
+        label { 
+            color: white;
+            display:block;
+            font: 1.2em;
+            margin-bottom: .5em;
+        }
+
+        input, textarea {
+            background: var(--lightBackground);
+            padding: .8em;
+            width: 100%;
+            margin-bottom: 1em;
+            border-radius: .3em;
+            border: 1px solid var(--primaryPink);
+            box-sizing: border-box;
+            
+        }
+
+        input[type="submit"] {
+
+            background-color: var(--primaryPink);
+            color: white;
+            font-weight: bold;
+            font-size: 15px;
+            border:none;
+            margin-bottom: 5em;
+            
+            display: inline-block;
+            padding: 0.5em 2em;
+            width: unset;
+            cursor: pointer;
+
+        }
+    }
+
 }
+
+
+
+
+
+ 
 
 ul {
     list-style: none;

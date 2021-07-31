@@ -35,7 +35,27 @@ section {
 
 .navbar nav {
   /* TEMPORARY DISABLE*/
-  display: none;
+  position: fixed;
+  z-index: 999;
+  width: 66%;
+  right: 0;
+  top: 0;
+  background: var(--lightBackground);
+  height: 100vh;
+  padding: 1em;
+}
+
+.navbar nav li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: .5em;
+  font-size: 1.3em;
+  text-align: right;
+}
+
+.navbar nav li a.hover {
+  font-weight: bold;
 }
 
 .navbar .navbarName {
@@ -109,7 +129,7 @@ section {
 }
 
 .hero #aboutMeOne, .hero #aboutMeTwo, .hero #aboutMeThree {
-  font-size: 25px;
+  font-size: 17px;
 }
 
 .hero #aboutMeOne {
@@ -137,7 +157,7 @@ section {
 }
 
 .hero ul li h5 {
-  font-size: 24px;
+  font-size: 20px;
   color: var(--primaryPink);
   font-weight: bold;
   margin-top: 0.3em;
@@ -145,7 +165,7 @@ section {
 
 .hero ul li p {
   color: white;
-  font-size: 17px;
+  font-size: 15px;
   padding-bottom: 1.2em;
 }
 
@@ -167,7 +187,7 @@ section {
   color: white;
   text-decoration: none;
   font-weight: none !important;
-  font-size: 17px;
+  font-size: 15px;
   margin-bottom: 0.5em;
 }
 
@@ -218,14 +238,14 @@ section {
 }
 
 .graphics .right-col #graphicsDescriptionOne {
-  font-size: 17px;
+  font-size: 15px;
   color: white;
   font-weight: bold;
   padding-bottom: 2.5em;
 }
 
 .graphics .right-col #graphicsDescriptionTwo {
-  font-size: 17px;
+  font-size: 15px;
   color: white;
   font-weight: none;
 }
@@ -267,18 +287,44 @@ section {
   padding: 0.5em 4em;
 }
 
-.contactMe {
-  text-align: center;
-}
-
-.contactMe .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.contactMe .container .contactMeLeft {
+.contactMe .contactMeLeft {
   color: white;
+}
+
+.contactMe .contactMeLeft a {
+  text-decoration: none;
+  color: var(--primaryPink);
+}
+
+.contactMe .contactMeRight label {
+  color: white;
+  display: block;
+  font: 1.2em;
+  margin-bottom: .5em;
+}
+
+.contactMe .contactMeRight input, .contactMe .contactMeRight textarea {
+  background: var(--lightBackground);
+  padding: .8em;
+  width: 100%;
+  margin-bottom: 1em;
+  border-radius: .3em;
+  border: 1px solid var(--primaryPink);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.contactMe .contactMeRight input[type="submit"] {
+  background-color: var(--primaryPink);
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  border: none;
+  margin-bottom: 5em;
+  display: inline-block;
+  padding: 0.5em 2em;
+  width: unset;
+  cursor: pointer;
 }
 
 ul {
