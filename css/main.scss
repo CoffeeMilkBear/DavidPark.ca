@@ -18,9 +18,62 @@ section {
     padding: 4em 2em 1em 2em;
 }
 
+ul {
+    list-style: none;
+    text-align: center;
+}
+
 /* START HERE*/
 
 /* nav bar*/
+nav.menu-btn {
+    display:block;
+}
+
+nav { /* TEMPORARY DISABLE*/
+
+    display:none;
+    position: fixed;
+    z-index: 999;
+    width: 66%;
+    right: 0;
+    top: 0;
+    background: var(--lightBackground);
+    height: 100vh;
+    padding: 1em;
+
+    
+     ul {
+         margin-top: 5em;
+     }
+
+    li {
+
+
+         a {
+             color: white;
+             text-decoration: none;
+             display: block;
+             padding: .5em;
+             font-size: 1.3em;
+             text-align: right;
+
+             &:hover {
+                 font-weight: bold;
+             }
+         }
+
+    }
+
+    .mobile-menu-exit {
+        float: right;
+        margin: .5em;
+        cursor: pointer;
+    }
+ }
+
+ 
+
 .navbar {
 
     background: var(--primaryPink);
@@ -31,39 +84,8 @@ section {
         place-content: space-between;
     }
 
-
-    nav { /* TEMPORARY DISABLE*/
-       position: fixed;
-       z-index: 999;
-       width: 66%;
-       right: 0;
-       top: 0;
-       background: var(--lightBackground);
-       height: 100vh;
-       padding: 1em;
-
-       
-
-       li {
-
-            a {
-                color: white;
-                text-decoration: none;
-                display: block;
-                padding: .5em;
-                font-size: 1.3em;
-                text-align: right;
-
-                &.hover {
-                    font-weight: bold;
-                }
-            }
-       }
-    }
-
     /* DAVID PARK text on navbar*/
     .navbarName {
-
         text-decoration: none;
         font-weight: regular;
         color: white;
@@ -151,9 +173,8 @@ section {
     }
 
     #aboutMeTwo {
-        width: 740px;  
+       /* width: 740px; */ 
         margin: 0 auto 0 auto;
-
     }
 
     #aboutMeThree { 
@@ -167,12 +188,14 @@ section {
 
     ul {
        
+        text-align: center;
+
         li {
 
             background: none;
             text-align: center;
             padding: 2em 1em;
-            width: 80%;
+            width: 300px;
             margin: 0 auto 5em auto;
             border: 1px solid var(--primaryPink);
 
@@ -231,7 +254,7 @@ section {
         
         font-family: var(--secondFont);
         color: white;
-        font-size: 111px;
+        font-size: 75px;
         margin: 0 auto 0em auto;
         
         .fuck {
@@ -350,8 +373,10 @@ section {
         }
 
     }
+
     .contactMeRight {
 
+    
         label { 
             color: white;
             display:block;
@@ -387,7 +412,110 @@ section {
         }
     }
 
+    h5 {
+        text-align: center;
+        color: white;
+        font-size: 15px;
+        margin-bottom: 5em;
+    }
+
 }
+
+
+/* PC */
+
+@media only screen and (min-width: 769px) {
+
+    #mobile-cta, #mobile-exit {
+        display: none;
+    }
+
+    .navbar .container {
+        display: grid;
+        grid-template-columns: 180px auto; 
+    }
+
+    .navbarName {
+        margin: 0;
+    }
+
+    .navbar nav {
+
+        display: flex;
+        justify-content: space-between;
+        background: none;
+        position: unset;
+        height: auto;
+        width: 100%;
+        padding: 0;
+        
+
+        ul {
+            display: flex;
+            margin: 0;
+        }
+
+        a {
+            font-size: 1em;
+            padding: .1em 1em;
+        }
+
+    }
+
+    /* projects (coding) set them horizontally*/
+
+   
+
+
+    /*graphics button/description*/
+    .graphics .graphicsTitle {
+        
+        font-family: var(--secondFont);
+        color: white;
+        font-size: 111px;
+        margin: 0 auto 0em auto;
+        
+        .fuck {
+            color: var(--primaryPink);
+            -webkit-text-stroke: 1px white;
+            
+        }
+    }
+
+
+
+
+    .leftAndRight {
+
+        display: inline-flex;
+        
+        .left-col {
+
+           margin-right: 5em;
+        }
+
+        .right-col {
+            text-align: right;
+            margin-top: 7em;
+            width: 250px;
+        }
+
+    }
+
+
+
+
+
+
+    
+}
+
+
+
+
+
+
+
 
 
 
@@ -395,7 +523,3 @@ section {
 
  
 
-ul {
-    list-style: none;
-    text-align: center;
-}

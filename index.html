@@ -18,9 +18,10 @@
             <img id="mobile-cta" class="mobile-menu" src="/images/mobilemenu.svg">
 
                 <nav>
+                    <img src="images/mobilemenuexit.svg" id="mobile-exit" class="mobile-menu-exit" alt="closeNavigation">
                     <ul>
                         <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
+                        <li><a href="index.html#aboutMeOne">About</a></li>
                         <li><a href="#">Projects</a></li>
                         <li><a href="#">Graphics</a></li>
                         <li><a href="#">Contact</a></li>
@@ -30,6 +31,8 @@
         </div>
     </div>
     
+
+
     <section class="hero">
         <div class="container">
 
@@ -54,53 +57,61 @@
                 </p>
             </div>
 
-            <ul>      
-                <li>
-                    <img src="images/default.jpg" alt="Person">
-                    <h5>FunOrangeBot</h5>
-                    <p>Discord Bot with custom commands created for FunOrange, using chariot.js</p>
-                    <a href="#">GitHub</a>
-                    <h6>Language: JavaScript</h6>
-                </li>
+            <div class="codingProjects">
+                <ul>      
+                    <li>
+                        <img src="images/default.jpg" alt="Person">
+                        <h5>FunOrangeBot</h5>
+                        <p>Discord Bot with custom commands created for FunOrange, using chariot.js</p>
+                        <a href="#">GitHub</a>
+                        <h6>Language: JavaScript</h6>
+                    </li>
 
-                <li>
-                    <img src="images/default.jpg" alt="Person">
-                    <h5>FunOrangeBot</h5>
-                    <p>Discord Bot with custom commands created for FunOrange, using chariot.js</p>
-                    <a href="#">GitHub</a>
-                    <h6>Language: JavaScript</h6>
-                </li>
+                    <li>
+                        <img src="images/default.jpg" alt="Person">
+                        <h5>FunOrangeBot</h5>
+                        <p>Discord Bot with custom commands created for FunOrange, using chariot.js</p>
+                        <a href="#">GitHub</a>
+                        <h6>Language: JavaScript</h6>
+                    </li>
 
-                <li>
-                    <img src="images/default.jpg" alt="Person">
-                    <h5>FunOrangeBot</h5>              
-                    <p>Discord Bot with custom commands created for FunOrange, using chariot.js</p>
-                    <a href="#">GitHub</a>
-                    <h6>Language: JavaScript</h6>
-                </li>
+                    <li>
+                        <img src="images/default.jpg" alt="Person">
+                        <h5>FunOrangeBot</h5>              
+                        <p>Discord Bot with custom commands created for FunOrange, using chariot.js</p>
+                        <a href="#">GitHub</a>
+                        <h6>Language: JavaScript</h6>
+                    </li>
+                </ul>
+            </div>
 
-            </ul>
+
         </div> 
     </section>
+
+
+
 
     <section class="graphics">
         <div class="container">
             
             <p class="graphicsTitle">STRAWBERRY<span class="fuck">MILK</span></p>
 
-            <div class="left-col"> 
-                <img src="images/logo.png" id="strawberryMilkLogo">
-                <a href="https://www.twitter.com/strawmilked" id="strawberryMilkTwitter">Check out our Twitter!</a>
-            </div>
+            <div class="leftAndRight">
 
+                <div class="left-col"> 
+                    <img src="images/logo.png" id="strawberryMilkLogo">
+                    <a href="https://www.twitter.com/strawmilked" id="strawberryMilkTwitter">Check out our Twitter!</a>
+                </div>
 
-            <div class="right-col">
-                <p id="graphicsDescriptionOne">
-                    In addition to programming, I have a passion for creating social media designs or livestream brandings for online personalities.
-                </p>
-                <p id="graphicsDescriptionTwo">
-                    StrawberryMilk is a graphic design group founded by my friend and I in 2020. We have made over 100+ commissions and have many positive and constructive reviews from our customers!
-                </p>
+                <div class="right-col">
+                    <p id="graphicsDescriptionOne">
+                        In addition to programming, I have a passion for creating social media designs or livestream brandings for online personalities.
+                    </p>
+                    <p id="graphicsDescriptionTwo">
+                        StrawberryMilk is a graphic design group founded by my friend and I in 2020. We have made over 100+ commissions and have many positive and constructive reviews from our customers!
+                    </p>
+                </div>
             </div>
 
             <ul>
@@ -134,6 +145,9 @@
         </div>
     </section>
 
+
+
+
     <section class="contactMe">
         <div class="container">
             <div class="contactMeLeft">
@@ -159,9 +173,32 @@
             </div>
         </div>
 
-        <p>Huge thanks to Riya and FunOrange for the tremendous help, this project wouldn't be possible without them!</p>
+        <h5>Huge thanks to Riya and FunOrange for the tremendous help, this website wouldn't be possible without them!</h5>
 
     </section>
+
+
+
+
+
+    <script>
+
+        const mobileButton = document.getElementById('mobile-cta')
+                nav = document.querySelector('nav')
+                mobileButtonExit = document.getElementById('mobile-exit');
+                
+        mobileButton.addEventListener('click', () => {
+            nav.classList.add('menu-btn');
+        })
+
+        mobileButtonExit.addEventListener('click', () => {
+            nav.classList.remove('menu-btn');
+        })
+
+    </script> 
+
+
+
 
 </body>
 </html>
