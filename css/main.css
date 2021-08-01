@@ -169,6 +169,7 @@ nav .mobile-menu-exit {
 
 .hero ul {
   text-align: center;
+  padding-left: 0;
 }
 
 .hero ul li {
@@ -396,6 +397,10 @@ nav .mobile-menu-exit {
     padding: .1em 1em;
   }
   /* projects (coding) set them horizontally*/
+  .hero li {
+    display: inline-block;
+    margin: 1em 1em !important;
+  }
   /*graphics button/description*/
   .graphics .graphicsTitle {
     font-family: var(--secondFont);

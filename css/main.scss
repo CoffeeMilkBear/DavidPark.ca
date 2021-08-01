@@ -189,6 +189,7 @@ nav { /* TEMPORARY DISABLE*/
     ul {
        
         text-align: center;
+        padding-left: 0;
 
         li {
 
@@ -464,7 +465,12 @@ nav { /* TEMPORARY DISABLE*/
 
     /* projects (coding) set them horizontally*/
 
-   
+    
+    .hero li {
+        display: inline-block;
+        margin: 1em 1em !important;
+    }
+
 
 
     /*graphics button/description*/
@@ -483,8 +489,6 @@ nav { /* TEMPORARY DISABLE*/
     }
 
 
-
-
     .leftAndRight {
 
         display: inline-flex;
@@ -501,10 +505,6 @@ nav { /* TEMPORARY DISABLE*/
         }
 
     }
-
-
-
-
 
 
     
