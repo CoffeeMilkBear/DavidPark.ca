@@ -1,32 +1,15 @@
-from flask import Flask, render_template, send_from_directory
+from flask import Flask
 
 app = Flask(__name__)
 
-@app.route('/')
-def index():
-    return render_template('index.html')
+# No code here yet. All static routes are handled in app.yaml
 
-@app.route('/favicon.ico')
-def favicon():
-    return send_from_directory('static', favicon.ico)
-@app.route('/css/main.css')
-def maincss():
-    return send_from_directory('static/css', 'main.css')
-@app.route('/images/default.jpg')
-def defaultjpg():
-    return send_from_directory('static/images', 'default.jpg')
-@app.route('/images/logo.png')
-def logopng():
-    return send_from_directory('static/images', 'logo.png')
-@app.route('/images/project1.png')
-def project1png():
-    return send_from_directory('static/images', 'project1.png')
-@app.route('/images/mobilemenu.svg')
-def mobilemenusvg():
-    return send_from_directory('static/images', 'mobilemenu.svg')
-@app.route('/images/mobilemenuexit.svg')
-def mobilemenuexitsvg():
-    return send_from_directory('static/images', 'mobilemenuexit.svg')
-
-if __name__ == "__main__":
-    app.run() 
+if __name__ == '__main__':
+    # This is used when running locally only. When deploying to Google App
+    # Engine, a webserver process such as Gunicorn will serve the app. This
+    # can be configured by adding an `entrypoint` to app.yaml.
+    # Flask's development server will automatically serve static files in
+    # the "static" directory. See:
+    # http://flask.pocoo.org/docs/1.0/quickstart/#static-files. Once deployed,
+    # App Engine itself will serve those files as configured in app.yaml.
+    app.run(host='127.0.0.1', port=8080, debug=True)
