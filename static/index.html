@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+   
+    <!-- Pink bar at the top -->
+    <div class="navbar">
+        <div class="container">
+            <!-- My name-->
+            <a class="navbarName" href="#">David Park</a>
+            <!-- Phone menu button -->
+            <img id="mobile-cta" class="mobile-menu" src="/images/mobilemenu.svg">
+
+                <nav>
+                    <img src="images/mobilemenuexit.svg" id="mobile-exit" class="mobile-menu-exit" alt="closeNavigation">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="index.html#aboutMeOne">About</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li><a href="#">Graphics</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>    
+            </div>
+        </div>
+    </div>
+    
+
+
+    <section class="hero">
+        <div class="container">
+
+            <img title="aboutMeAvatar" class="avatar" src="images/default.jpg"> 
+            <br>
+            <h2 id="aboutMeName">David Park</h2>
+            <p id="description">PROGRAMMING WARLORD IM BUILT DIFFERENT</p>
+            <br>
+
+            <div class="heroButtons">
+            <a href="https://github.com/mdilac" class="heroGithub">GITHUB</a>
+            <a href="https://twitter.com/asiankid529" class="heroTwitter">TWITTER</a>
+            </div>
+
+            <div class="aboutMeDescription">
+                <p>
+                    <p id="aboutMeOne">Hey! I'm David Park.</p>
+                    <br>
+                    <p id="aboutMeTwo">I'm a student at the University of Toronto studying Statistics and Computer Science, aspiring to be a software engineer.</p> 
+                    <br>
+                    <p id="aboutMeThree">Feel free to check out my <a href="#" id="descriptionResume">resume</a> below!</p>
+                </p>
+            </div>
+
+            <div class="codingProjects">
+                <ul>      
+                    <li>
+                        <img src="images/default.jpg" alt="Person">
+                        <h5>FunOrangeBot</h5>
+                        <p>Discord Bot with custom commands created for FunOrange, using chariot.js</p>
+                        <a href="#">GitHub</a>
+                        <h6>Language: JavaScript</h6>
+                    </li>
+
+                    <li>
+                        <img src="images/default.jpg" alt="Person">
+                        <h5>FunOrangeBot</h5>
+                        <p>Discord Bot with custom commands created for FunOrange, using chariot.js</p>
+                        <a href="#">GitHub</a>
+                        <h6>Language: JavaScript</h6>
+                    </li>
+
+                    <li>
+                        <img src="images/default.jpg" alt="Person">
+                        <h5>FunOrangeBot</h5>              
+                        <p>Discord Bot with custom commands created for FunOrange, using chariot.js</p>
+                        <a href="#">GitHub</a>
+                        <h6>Language: JavaScript</h6>
+                    </li>
+                </ul>
+            </div>
+
+
+        </div> 
+    </section>
+
+
+
+
+    <section class="graphics">
+        <div class="container">
+            
+            <p class="graphicsTitle">STRAWBERRY<span class="fuck">MILK</span></p>
+
+            <div class="leftAndRight">
+
+                <div class="left-col"> 
+                    <img src="images/logo.png" id="strawberryMilkLogo">
+                    <a href="https://www.twitter.com/strawmilked" id="strawberryMilkTwitter">Check out our Twitter!</a>
+                </div>
+
+                <div class="right-col">
+                    <p id="graphicsDescriptionOne">
+                        In addition to programming, I have a passion for creating social media designs or livestream brandings for online personalities.
+                    </p>
+                    <p id="graphicsDescriptionTwo">
+                        StrawberryMilk is a graphic design group founded by my friend and I in 2020. We have made over 100+ commissions and have many positive and constructive reviews from our customers!
+                    </p>
+                </div>
+            </div>
+
+            <ul>
+
+                <li>
+                    <img class="temporaryDisable" src="images/default.jpg">
+                    <h5>RyuK</h5>
+                    <p>120,000+ followers on Twitch</p>
+                    <p>Overlays, Offline/BRB Screen</p>
+                </li>
+                
+                <li>
+                    <img class="temporaryDisable" src="images/default.jpg"> 
+                    <h5>xootynator</h5>
+                    <p>40,000+ followers on Twitch</p>
+                    <p>Handcam</p>
+                </li>
+
+                <li> 
+                    <img class="temporaryDisable" src="images/default.jpg">
+                    <h5>FunOrange</h5>
+                    <p>60,000 subscribers on YouTube</p>
+                    <p>Panels, Screens, Overlays</p>
+                </li>
+
+            </ul>
+
+            <!-- button for -->
+            <a href="https://twitter.com/strawmilked" id="manyMore">and many more!</a>
+
+        </div>
+    </section>
+
+
+
+
+    <section class="contactMe">
+        <div class="container">
+            <div class="contactForm row">
+                <div class="contactMeLeft column">
+                    <h2>Let's Connect!</h2>
+                    <p>Want to have a chat or reach out on a more serious note? Please don't hesitate to shoot me an email!</p>
+                    <br> 
+                    <p>If you'd like to talk about Graphic Design, don't hesitate to shoot us a message on <a href="https://twitter.com/StrawberryMilk" class="contactMeTwitter">Twitter</a>! Or you can leave a message over this contact form.</p>
+                </div>
+
+                <div class="contactMeRight column">
+                    <form action="">
+                        <label for="name">Email:</label>
+                        <input type="text" id="email" name="name">
+                        <label for="message">Message:</label>
+                        <textarea name="message" id="message" cols="30" rows="20"></textarea>
+                        <input type="submit" class="send-message-cta" value="Send Message">
+                    </form>
+                </div>    
+            </div>
+        </div>
+
+        <h5>Huge thanks to Riya and FunOrange for the tremendous help, this website wouldn't be possible without them!</h5>
+
+    </section>
+
+
+    <script>
+
+        const mobileButton = document.getElementById('mobile-cta')
+                nav = document.querySelector('nav')
+                mobileButtonExit = document.getElementById('mobile-exit');
+                
+        mobileButton.addEventListener('click', () => {
+            nav.classList.add('menu-btn');
+        })
+
+        mobileButtonExit.addEventListener('click', () => {
+            nav.classList.remove('menu-btn');
+        })
+
+    </script> 
+
+
+
+
+</body>
+</html>
