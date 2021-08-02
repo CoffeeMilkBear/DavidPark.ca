@@ -318,12 +318,15 @@ nav { /* TEMPORARY DISABLE*/
 
     ul {
        
+        padding-left: 0; 
+        padding-bottom: 1.5em;
         li {
 
+            
             background: none;
             text-align: center;
             padding: 2em 1em;
-            width: 80%;
+            width: 300px;
             margin: 0 auto 5em auto;
             border: 1px solid white;
 
@@ -367,16 +370,18 @@ nav { /* TEMPORARY DISABLE*/
     .contactMeLeft {
 
         color: white;
-
+        text-align: center;
+        padding-bottom: 2em;
         a {
             text-decoration: none;
-            color: var(--primaryPink);
+            color: var(--primaryPink); 
         }
 
     }
 
     .contactMeRight {
 
+        width: 500px;
     
         label { 
             color: white;
@@ -393,7 +398,7 @@ nav { /* TEMPORARY DISABLE*/
             border-radius: .3em;
             border: 1px solid var(--primaryPink);
             box-sizing: border-box;
-            
+            resize: none
         }
 
         input[type="submit"] {
@@ -494,7 +499,6 @@ nav { /* TEMPORARY DISABLE*/
         display: inline-flex;
         
         .left-col {
-
            margin-right: 5em;
         }
 
@@ -506,6 +510,42 @@ nav { /* TEMPORARY DISABLE*/
 
     }
 
+    .graphics li {
+        display: inline-block;
+        margin: 1em 1em !important;
+    }
+    
+    .contactForm {
+        margin: auto;
+        .contactMeLeft {
+            width: 250px;
+            text-align: left;
+            margin-right: 5em;
+            padding-top: 4em;
+            margin-right: 5em;
+        }
+        .contactMeRight {
+            display: center;
+        }
+    }
+
+    #email {
+        color: white;
+        font-family: var(--mainFont);
+    }
+    #message {
+        color: white;
+        font-family: var(--mainFont);
+    }
+
+
+    .row {
+        display: flex;
+    }
+
+    .column {
+        flex: 50%;
+    }
 
     
 }
