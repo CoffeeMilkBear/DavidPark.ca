@@ -328,8 +328,8 @@ nav .mobile-menu-exit {
   color: var(--primaryPink);
 }
 
-.contactMe .contactMeRight {
-  width: 500px;
+.contactMe .contactMeRight #message, .contactMe .contactMeRight #email {
+  color: white;
 }
 
 .contactMe .contactMeRight label {
@@ -448,11 +448,13 @@ nav .mobile-menu-exit {
     width: 250px;
     text-align: left;
     margin-right: 5em;
-    padding-top: 4em;
-    margin-right: 5em;
+    padding-top: 5em;
+    margin-left: 4em;
   }
   .contactForm .contactMeRight {
     display: center;
+    width: 500px;
+    margin-right: 4em;
   }
   #email {
     color: white;
