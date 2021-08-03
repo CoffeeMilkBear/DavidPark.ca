@@ -1,8 +1,21 @@
-from flask import Flask
+from flask.helpers import send_from_directory
+from gmail import sendProxyEmail
+from flask import Flask, request
 
-app = Flask(__name__)
+app = Flask(__name__, static_url_path='')
 
-# No code here yet. All static routes are handled in app.yaml
+# All static routes are handled in app.yaml. This route is only used when running locally
+@app.route('/')
+def index():
+    return send_from_directory('static', 'index.html')
+
+@app.route('/leaveMessage', methods=['POST'])
+def leaveMessage():
+    sender = request.form['email']
+    message = request.form['message']
+    sendProxyEmail(sender, 'mdilac52@gmail.com', message)
+    return 'OK', 200
+
 
 if __name__ == '__main__':
     # This is used when running locally only. When deploying to Google App
