@@ -50,18 +50,18 @@ nav { /* TEMPORARY DISABLE*/
     li {
 
 
-         a {
-             color: white;
-             text-decoration: none;
-             display: block;
-             padding: .5em;
-             font-size: 1.3em;
-             text-align: right;
+        a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            padding: .5em;
+            font-size: 1.3em;
+            text-align: right;
 
-             &:hover {
-                 font-weight: bold;
-             }
-         }
+            &:hover {
+                font-weight: bold;
+            }
+        }
 
     }
 
@@ -70,7 +70,7 @@ nav { /* TEMPORARY DISABLE*/
         margin: .5em;
         cursor: pointer;
     }
- }
+}
 
  
 
@@ -320,9 +320,9 @@ nav { /* TEMPORARY DISABLE*/
        
         padding-left: 0; 
         padding-bottom: 1.5em;
-        li {
 
-            
+        li {
+    
             background: none;
             text-align: center;
             padding: 2em 1em;
@@ -372,6 +372,7 @@ nav { /* TEMPORARY DISABLE*/
         color: white;
         text-align: center;
         padding-bottom: 2em;
+
         a {
             text-decoration: none;
             color: var(--primaryPink); 
@@ -381,8 +382,12 @@ nav { /* TEMPORARY DISABLE*/
 
     .contactMeRight {
 
-        width: 500px;
+       
     
+        #message, #email {
+            color: white;
+        }
+        
         label { 
             color: white;
             display:block;
@@ -399,6 +404,7 @@ nav { /* TEMPORARY DISABLE*/
             border: 1px solid var(--primaryPink);
             box-sizing: border-box;
             resize: none
+            
         }
 
         input[type="submit"] {
@@ -416,6 +422,9 @@ nav { /* TEMPORARY DISABLE*/
             cursor: pointer;
 
         }
+
+
+
     }
 
     h5 {
@@ -493,7 +502,6 @@ nav { /* TEMPORARY DISABLE*/
         }
     }
 
-
     .leftAndRight {
 
         display: inline-flex;
@@ -516,17 +524,23 @@ nav { /* TEMPORARY DISABLE*/
     }
     
     .contactForm {
+
         margin: auto;
+
         .contactMeLeft {
             width: 250px;
             text-align: left;
             margin-right: 5em;
-            padding-top: 4em;
-            margin-right: 5em;
+            padding-top: 5em;
+            margin-left: 4em;
         }
+
         .contactMeRight {
             display: center;
+            width: 500px;
+            margin-right: 4em;
         }
+
     }
 
     #email {
