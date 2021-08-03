@@ -485,8 +485,6 @@ nav { /* TEMPORARY DISABLE*/
         margin: 1em 1em !important;
     }
 
-
-
     /*graphics button/description*/
     .graphics .graphicsTitle {
         
@@ -497,8 +495,7 @@ nav { /* TEMPORARY DISABLE*/
         
         .fuck {
             color: var(--primaryPink);
-            -webkit-text-stroke: 1px white;
-            
+            -webkit-text-stroke: 1px white;  
         }
     }
 
@@ -547,11 +544,11 @@ nav { /* TEMPORARY DISABLE*/
         color: white;
         font-family: var(--mainFont);
     }
+
     #message {
         color: white;
         font-family: var(--mainFont);
     }
-
 
     .row {
         display: flex;
@@ -561,19 +558,4 @@ nav { /* TEMPORARY DISABLE*/
         flex: 50%;
     }
 
-    
 }
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
